@@ -200,7 +200,7 @@ for work in works:
 
 ## 授權說明 License
 
-本資料集僅供學術研究使用。經典內容版權歸屬 CBETA 中華電子佛典協會。
+本資料集僅供學術研究使用。內容版權歸屬法鼓文理學院數位典藏組。
 
 ## 引用 Citation
 
@@ -208,8 +208,8 @@ for work in works:
 
 ```
 @dataset{llm_buddhist_canon_eval_2025,
-  title={Large Language Model Buddhist Canon Knowledge Memory Assessment Dataset},
-  author={LLMEvaluations Project},
+  title={Buddhist Canon Knowledge Evaluation Dataset},
+  author={DILA Digital Archive Team},
   year={2025},
   version={1.0.0}
 }
