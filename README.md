@@ -217,6 +217,11 @@ for work in works:
 
 ## 更新紀錄 Changelog
 
+### 2026-11-16
+- 更正說明 Correction note: [`EvaluationResults/2025-11-28/CORRECTION.md`](EvaluationResults/2025-11-28/CORRECTION.md)
+  - 2025-11-28 Gemini 分數檔中的代碼 `S` 表示回應停在輸出 token 上限，不表示安全封鎖。資料檔未更動。
+  - In the 2025-11-28 Gemini score files, the code `S` shows that the response stopped at the output token limit. It does not show a safety block. No data file is changed.
+
 ### v1.0.0 (2025-11-27)
 - 初始版本發布
 - 包含 40 部經典、520 題評估問題
