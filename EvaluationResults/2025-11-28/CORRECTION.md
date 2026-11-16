@@ -73,3 +73,29 @@ Two works in the dataset share the work ID T0945 (rows No. 15 and No. 21). In `m
 - Row No. 15, column 全文內容_0, has the score 1, but the response (淫念) is not the answer (三昧).
 
 A fault in the matching of these two rows is probable. The cause is under investigation. Until it is resolved, leave these two rows out when you use the `gpt-5-mini` results.
+
+## 4. 公開演講中的相關陳述 Related statements in public talks
+
+**中文**
+
+這些結果曾在兩場公開演講中展示：
+
+- 洪振洲、吳怡輝，〈大語言模型對佛教大藏經知識記憶能力的系統化評估研究〉，第十六屆數位典藏與數位人文國際研討會（DADH 2025），國立臺灣大學，2025-11-29。（論文集頁 318–324 只收錄摘要，沒有結果。）
+- 洪振洲、吳怡輝，〈從鸚鵡到鏡子：一場讓 AI 照見本來記憶的佛典大考〉，2026 法鼓數位典藏專案春季發表會，2026-05-20。影片：https://youtu.be/-C17A6u1ius
+
+本說明更正這兩場演講中的兩項陳述：
+
+1. 兩場演講都把這三個 Gemini 模型標為「Safety Block」。第 2 節更正這一點：這些格子停在輸出 token 上限，不是安全封鎖的證據。
+2. 2026 年的演講用 ▲/▼ 比較兩次評測的「綜合評分」。兩次的公式不同。2025 年的公式依題數加權平均三個層級，全文內容用平均相似度。2026 年的公式只在相似度 0.7 以上時才把全文內容題目算為答對。所以 2026 年的數值較低，每個 ▲/▼ 都低了 2.2 至 3.6 分。用同一公式時，GPT-5 → GPT-5.4、Claude Sonnet 4.5 → 4.6 與 Claude Opus 4.5 → 4.7 都是上升，不是下降。同一模型 Claude Haiku 4.5 的 ▼4.3 變為 −1.0。請分別比較各層級的分數，不要比較綜合評分。
+
+**English**
+
+These results were shown in two public talks:
+
+- 洪振洲 and 吳怡輝, "A Systematic Study on Large Language Models' Memory of the Buddhist Canon", 16th International Conference on Digital Archives and Digital Humanities (DADH 2025), National Taiwan University, 2025-11-29. (Proceedings pp. 318–324 hold the abstract only, with no results.)
+- 洪振洲 and 吳怡輝, 從鸚鵡到鏡子 ("From Parrot to Mirror"), 2026 法鼓數位典藏專案春季發表會 (Dharma Drum digital archives projects spring event), 2026-05-20. Video: https://youtu.be/-C17A6u1ius
+
+This note corrects two statements in these talks:
+
+1. Both talks labelled the three Gemini models "Safety Block". Section 2 corrects this: these cells stopped at the limit of output tokens. They are not evidence of a safety block.
+2. The 2026 talk compared the pooled score (綜合評分) of the two campaigns with ▲/▼. The two campaigns used different formulas. The 2025 formula is the item-weighted mean of the three tiers, with the mean similarity for Full-text Content. The 2026 formula counts a Full-text Content item as correct only at a similarity of 0.7 or more. So the 2026 values are lower, and each ▲/▼ is 2.2 to 3.6 points too low. With one formula, GPT-5 → GPT-5.4, Claude Sonnet 4.5 → 4.6 and Claude Opus 4.5 → 4.7 all rise; they do not fall. For the same model, Claude Haiku 4.5, ▼4.3 becomes −1.0. Compare the scores of each tier separately. Do not compare pooled scores.
